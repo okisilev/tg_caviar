@@ -1,0 +1,43 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+.npm
+.yarn
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# SQLite database (локальные данные)
+*.db
+*.db-shm
+*.db-wal
+seafood.db
+
+# Logs
+logs
+*.log
+
+# Build and coverage
+coverage/
+.nyc_output/
+build/
+dist/
+
+# IDE и редакторы
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Windows
+/desktop.ini
+
+# Local config
+config.json

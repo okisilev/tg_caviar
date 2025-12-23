@@ -1,0 +1,17 @@
+{
+  "name": "tg_seafood",
+  "version": "1.0.0",
+  "description": "Telegram bot for seafood store",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": ["telegram", "bot", "seafood"],
+  "author": "Олег К.",
+  "license": "ISC",
+  "dependencies": {
+    "telegraf": "^4.16.3",
+    "better-sqlite3": "^12.5.0",
+    "dotenv": "^17.2.3"
+  }
+}
