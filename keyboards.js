@@ -26,7 +26,7 @@ function quantityKeyboard(productId) {
 
 function pickupOptions() {
   return Markup.inlineKeyboard([
-    [Markup.button.callback('Самовывоз (Москва)', 'pickup_self')],
+    [Markup.button.callback('Самовывоз (Иркутск, ул. Арктическая, 76)', 'pickup_self')],
     [Markup.button.callback('Доставка', 'pickup_delivery')],
     [Markup.button.callback('← Назад', 'back_to_qty')]
   ]);
@@ -49,8 +49,10 @@ function cartKeyboard() {
 function adminMainMenu() {
   return Markup.inlineKeyboard([
     [Markup.button.callback('📦 Товары', 'admin_products')],
+    [Markup.button.callback('➕ Добавить товар', 'admin_add_product')],
     [Markup.button.callback('📋 Заказы', 'admin_orders')],
-    [Markup.button.callback('📊 Отчёты', 'admin_reports')]
+    [Markup.button.callback('📊 Отчёты', 'admin_reports')],
+    [Markup.button.callback('📨 Рассылка', 'admin_broadcast')]
   ]);
 }
 

@@ -1,6 +1,5 @@
 const db = require('./db');
 const { productKeyboard, quantityKeyboard, pickupOptions, contactRequest, cartKeyboard, adminOrderActions } = require('./keyboards');
-
 let cart = {};
 let userState = {};
 
@@ -123,7 +122,7 @@ ${itemsList}
   );
 
   ctx.reply(
-    `✅ Заказ принят!\n\n💳 Реквизиты:\nСБЕР — 1234 5678 9012 3456\n❗ В комментарии укажите: заказ #${order.lastInsertRowid}`,
+    `✅ Заказ ${order.lastInsertRowid} принят!\n\n💳 Оплатите по реквизитам:\n\n**Сбер или ВТБ**\nНомер: +79148993414\nПолучатель: Наталья Александровна М.\n\nВ коментарии укажите номер Заказа ${order.lastInsertRowid}\n\nПосле оплаты админ подтвердит заказ!`,
     { reply_markup: { remove_keyboard: true } }
   );
 
